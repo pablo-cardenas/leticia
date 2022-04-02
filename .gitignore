@@ -1,0 +1,16 @@
+/c/build
+
+*.pyc
+__pycache__/
+
+/src/instance/
+/src/flask_leticia/static/dist/
+/src/flask_leticia/webpack/node_modules/
+
+/.pytest_cache/
+/.coverage
+/htmlcov/
+
+/dist/
+/build/
+/src/*.egg-info/
