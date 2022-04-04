@@ -6,6 +6,7 @@ build-backend = 'setuptools.build_meta'
 name = "Leticia"
 version = "0.1"
 dependencies = [
+	"click",
 	"matplotlib",
 	"numpy",
 	"scipy",
