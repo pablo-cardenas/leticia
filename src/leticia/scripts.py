@@ -18,3 +18,16 @@ def run_command(ncol, nrow, params, seed, output):
     result = run(ncol, nrow, json.loads(params), seed)
     with open(output, 'w') as f:
         f.write(json.dumps(result).replace('Infinity', 'null'))
+
+
+@cli.command('gis')
+@click.argument('infile')
+@click.argument('outfile')
+def gis_command(infile, outfile):
+    import numpy as np
+    result = json.read(open(infile))
+    
+    grid = np.ones((10, 10), dtype=bool)
+    
+
+    
